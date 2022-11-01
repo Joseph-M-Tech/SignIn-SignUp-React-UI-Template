@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Signup_component extends Component {
+class Signup_component extends Component {
     render() {
         return (
         <form>
@@ -11,6 +11,7 @@ export class Signup_component extends Component {
                 type="text"
                 className="form-control"
                 placeholder="First name"
+                
             />
             </div>
             <div className="mb-3">
@@ -23,6 +24,7 @@ export class Signup_component extends Component {
                 type="email"
                 className="form-control"
                 placeholder="Enter email"
+                required= {true}
             />
             </div>
             <div className="mb-3">
@@ -31,6 +33,7 @@ export class Signup_component extends Component {
                 type="password"
                 className="form-control"
                 placeholder="Enter password"
+                required= {true}
             />
             </div>
             <div className="d-grid">
